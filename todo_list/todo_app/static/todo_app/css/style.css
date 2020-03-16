@@ -1,0 +1,119 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.username{
+    color: #e74c3c;
+}
+
+
+/* ----------------------------------------------- */
+/* HOME */
+/* ----------------------------------------------- */
+
+.img-box{
+    /* background-image:url('https://freerangestock.com/sample/119884/business-meeting--mockup-with-colorful-speech-balloons.jpg'); */
+    background: linear-gradient(to bottom, rgba(230,126,34,0.2),rgba(230,126,34,0.2)), url('https://freerangestock.com/sample/119884/business-meeting--mockup-with-colorful-speech-balloons.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    opacity: 0.5;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
+.hero-text-box h1{
+    font-size: 80px;
+}
+
+
+/* ----------------------------------------------- */
+/* SIGN IN */
+/* ----------------------------------------------- */
+.signin-box{
+    /* text-align: center; */
+}
+
+
+/*======================
+FOOTER
+=======================*/
+#sticky-footer {
+    flex-shrink: none;
+  }
+
+/*======================
+BUTTONS
+=======================*/
+.btn-logout{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================
+404 Page
+=======================*/
+
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+.four_zero_four_bg h3{
+            font-size:80px;
+            }
+            
+            .link_404{			 
+color: #fff!important;
+padding: 10px 20px;
+background: #39ac31;
+margin: 20px 0;
+display: inline-block;}
+.contant_box_404{ margin-top:-50px;}

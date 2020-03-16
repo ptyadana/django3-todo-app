@@ -9,11 +9,13 @@
     {% extends 'todo_app/base.html'%}
 
     {% block content%}
-        <div>
-            <p>
-                This is Home Page.
-            </p>
-        </div>
+    <div class="img-box">
+    </div>
+    <div class="hero-text-box">
+        <h1>Simply Organize your tasks</h1>
+        <h1>with ToDooo</h1>
+        <a role="button" class="btn btn-primary btn-lg" href="{% url 'signupuser' %}">Let's Start</a>
+    </div>
     {% endblock %}
 </body>
 </html>
