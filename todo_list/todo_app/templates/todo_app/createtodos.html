@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create To Do</title>
+</head>
+<body>
+
+    {% extends 'todo_app/base.html' %}
+
+    {% block content %}
+        <div>
+            <h3 style="color: red;">{{error}}</h3>
+            <form method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    {% endblock %} 
+</body>
+</html>
+

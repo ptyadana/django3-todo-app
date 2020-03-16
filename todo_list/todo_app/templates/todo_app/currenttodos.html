@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current to do</title>
+</head>
+<body>
+    {% extends 'todo_app/base.html'%}
+
+    {% block content%}
+        <div>
+            <p>
+                This is current page.
+            </p>
+            <p>
+
+                {% for todo in todo_list%}
+                <ul>
+                    <li>
+                        <a href="{% url 'viewtodo' todo.id %}">
+                            {% if todo.important %}<b>{% endif %}
+                                {{todo.title}}
+                            {% if todo.important %}</b>{% endif %}
+    
+                            {% if todo.memo %}
+                                - {{todo.memo}}
+                            {% endif %}
+                        </a>
+                    </li>
+                </ul>
+                {% endfor %}
+            </p>
+        </div>
+    {% endblock %}
+</body>
+</html>

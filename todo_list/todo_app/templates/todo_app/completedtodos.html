@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed to do</title>
+</head>
+<body>
+    {% extends 'todo_app/base.html'%}
+
+    {% block content%}
+        <div>
+            <p>
+
+                {% for todo in todo_list%}
+                <ul>
+                    <li>
+                        <a href="{% url 'viewtodo' todo.id %}">
+                            {% if todo.important %}<b>{% endif %}
+                                {{todo.title}}
+                            {% if todo.important %}</b>{% endif %}
+    
+                            {% if todo.memo %}
+                                - {{todo.memo}}
+                            {% endif %}
+
+                            {{todo.completed_date |date:'M j Y H:i'}}
+                        </a>
+                    </li>
+                </ul>
+                {% endfor %}
+            </p>
+        </div>
+    {% endblock %}
+</body>
+</html>
